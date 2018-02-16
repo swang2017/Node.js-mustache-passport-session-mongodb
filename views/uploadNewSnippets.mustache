@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/snippetsstyle.css"/>
+</head>
+<body>
+  <div class = "container">
+    <div class = "headerbox">
+
+      <div class = "header">
+        <div class = "headerTitleBox"> <a href = "renderSnippets"> See Your Snippets  </a> </div>
+        <div class = "headerTitleBox"> <a href = "renderAllSnippets"> See All Snippets </a> </div>
+      </div>
+      <div class = "userstatus">
+        <div class = "currentUser"> Current User: {{author}} </div>
+        <div class = "currentUser"><a href = "logout"> Logout </a> </div>
+      </div>
+    </div>
+
+    <div class = "snippetsplace">
+      <form action="/snippet" method="POST" id = "snippetform">
+        <div>  <input type="text" name="title" placeholder="title"/></div>
+        <div>  <input type="text" name="tag" placeholder="tag" /> </div>
+        <textarea rows="10" cols="200" name="body" form="snippetform" placeholder = "Enter your snippet here..."></textarea>
+        <div>  <input type="submit" /></div>
+      </form>
+    </div>
+</div>
+
+</body>
+
+
+</html>
